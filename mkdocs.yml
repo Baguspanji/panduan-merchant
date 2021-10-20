@@ -1,24 +1,34 @@
 site_name: Manual Books Tokoku
-site_favicon: favicon.ico
-extra_css: [extra.css]
-repo_name: "panduan-merchant"
-repo_url: "https://github.com/Baguspanji/panduan-merchant"
-copyright: "Copyright &copy; 2020 - 2021 BagusPanji"
 
-theme: material
-markdown_extensions:
-  - codehilite
-extra:
-  logo: "img/logo.png"
+extra_css:
+  - assets/css/extra.css
+
+theme:
+  name: material
+  logo: "assets/img/logo.png"
+  favicon: "assets/img/logo.png"
   palette:
-    primary: "deep orange"
-    accent: "light-blue"
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - header.autohide
   social:
     - type: "github"
       link: "https://github.com/Baguspanji"
 
-pages:
-  - Home: index.md
-  - Menu:
-      - "Menu Header": "menu/header.md"
-      - "Menu Home": "menu/home.md"
+extra:
+  generator: false
+
+plugins:
+  - search
+
+# repo_name: "panduan-merchant"
+# repo_url: "https://github.com/Baguspanji/panduan-merchant"
+copyright: "Copyright &copy; 2020 - 2021 CV Juru Ketik Nusantara"
