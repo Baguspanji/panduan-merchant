@@ -1,0 +1,17 @@
+site_name: Manual Books Tokoku
+
+theme:
+  name: material
+  language: id
+  font:
+    text: Roboto
+  palette:
+    primary: deep orange
+  logo: assets/logo.png
+
+
+pages:
+- Home                        : index.md
+- Menu: 
+    - 'Menu Header'                : 'menu/header.md'
+    - 'Menu Home'                  : 'menu/home.md'
