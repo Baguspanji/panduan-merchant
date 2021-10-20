@@ -1,4 +1,4 @@
-site_name: Manual Books Tokoku
+site_name: Manual Book Tokoku
 
 extra_css:
   - assets/css/extra.css
@@ -7,6 +7,7 @@ theme:
   name: material
   logo: "assets/img/logo.png"
   favicon: "assets/img/logo.png"
+  language: id
   palette:
     - scheme: default
       toggle:
@@ -17,17 +18,46 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
   features:
-    - navigation.instant
+    - navigation.expand
     - header.autohide
   social:
     - type: "github"
       link: "https://github.com/Baguspanji"
 
+nav:
+  - Beranda: index.md
+  - Menu Utama:
+      - menu_utama/header.md
+      - menu_utama/home.md
+      - menu_utama/footer.md
+  - Menu Produk:
+      - menu_produk/produk.md
+      - menu_produk/detail.md
+  - Menu Riwayat:
+      - menu_riwayat/riwayat-nav.md
+      - menu_riwayat/riwayat.md
+
 extra:
   generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Baguspanji
+    - icon: fontawesome/solid/paper-plane
+      link: mailto:bagusp1805@gmail.com
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/bagus-panji-8870211b5
+    - icon: fontawesome/brands/whatsapp
+      link: https://wa.me/6285785800430?
 
 plugins:
   - search
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
 
 # repo_name: "panduan-merchant"
 # repo_url: "https://github.com/Baguspanji/panduan-merchant"
