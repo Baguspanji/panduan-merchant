@@ -36,6 +36,11 @@ nav:
   - Menu Riwayat:
       - menu_riwayat/riwayat-nav.md
       - menu_riwayat/riwayat.md
+  - Menu Keranjang:
+      - menu_cart/cart-nav.md
+      - menu_cart/cart.md
+  - Cara Pemesanan:
+      - pesan/pesan.md
 
 extra:
   generator: false
